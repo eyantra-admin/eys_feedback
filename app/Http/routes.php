@@ -12,3 +12,23 @@
 */
 
 Route::get('/', 'WelcomeController@index');
+
+Route::match(['GET', 'POST'], '/workshop/resources', [
+		'as'	=> 'dwnResourcesLand',
+		'uses'	=> 'EYSWorkshopController@downloadResourcesLand'
+	]);
+
+Route::match(['GET', 'POST'], '/workshop/resources/python2.7.9', [
+		'as'	=> 'dwnPython2_7_9',
+		'uses'	=> 'EYSWorkshopController@dwnldPython'
+	]);
+
+Route::match(['GET', 'POST'], '/workshop/resources/numpy', [
+		'as'	=> 'dwnldPythonNumpy',
+		'uses'	=> 'EYSWorkshopController@dwnldPythonNumpy'
+	]);
+
+Route::match(['GET', 'POST'], '/workshop/resources/opencv', [
+		'as'	=> 'dwnldOpenCV',
+		'uses'	=> 'EYSWorkshopController@dwnldOpenCV'
+	]);
