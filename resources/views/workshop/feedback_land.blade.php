@@ -25,6 +25,7 @@
 <p align="center">
     Feedback form
 </p>
+    {{ Form::open(array('url' => '/workshop/feedback', 'method' => 'POST')) }}
 <p>
     Name of the participant: <input type="text" name="name"> &nbsp; Email: <input type="text" name="email">
 <p>
@@ -34,9 +35,7 @@
 <input type="checkbox" name="college" value="teacher">Teacher &nbsp;&nbsp;
 <input type="checkbox" name="college" value="student">Student<br>
 </p>
-<p>
-    <em> </em>
-</p>
+
 <p>
     <em>Please tick the appropriate option: </em></p>
 </p>
@@ -114,7 +113,7 @@
     </textarea>
 </p>
 
-<input type="submit" value="Submit">
-</form>
+{{Form::submit() }}
+{{Form::close() }}
 </body>
 </html>

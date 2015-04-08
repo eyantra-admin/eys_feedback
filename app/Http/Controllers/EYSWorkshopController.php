@@ -1,6 +1,8 @@
 <?php namespace App\Http\Controllers;
 use View;
 use Response;
+use Input;
+use Request;
 
 class EYSWorkshopController extends Controller {
 
@@ -28,6 +30,28 @@ class EYSWorkshopController extends Controller {
 	}
 
 	public function feedback_land(){
+		return View::make('workshop.feedback_land');
+	}
+
+	public function feedback_data(){
+		if (!Input::has('teacher')){
+    		//Redirect to the feedback page with error
+		}
+		if (!Input::has('student')){
+    		//Redirect to the feedback page with error
+		}
+		if (!Input::has('teacher')){
+    		//Redirect to the feedback page with error
+		}
+		if (!Input::has('teacher')){
+    		//Redirect to the feedback page with error
+		}
+
+		$teacher = Request::input('teacher');
+		$student = Request::input('student');
+		$yes = Request::input('student');
+
+
 		return View::make('workshop.feedback_land');
 	}
 
