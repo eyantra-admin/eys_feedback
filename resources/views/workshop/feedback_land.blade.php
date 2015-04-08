@@ -25,7 +25,7 @@
 <p align="center">
     Feedback form
 </p>
-    {{ Form::open(array('url' => '/workshop/feedback', 'method' => 'POST')) }}
+    <form action="#" method="GET">
 <p>
     Name of the participant: <input type="text" name="name"> &nbsp; Email: <input type="text" name="email">
 <p>
@@ -113,7 +113,7 @@
     </textarea>
 </p>
 
-{{Form::submit() }}
-{{Form::close() }}
+<input type="submit" value="Submit">
+</form>
 </body>
 </html>
