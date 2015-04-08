@@ -32,3 +32,8 @@ Route::match(['GET', 'POST'], '/workshop/resources/opencv', [
 		'as'	=> 'dwnldOpenCV',
 		'uses'	=> 'EYSWorkshopController@dwnldOpenCV'
 	]);
+
+Route::match(['GET', 'POST'], '/workshop/feedback', [
+		'as'	=> 'feedback_form',
+		'uses'	=> 'EYSWorkshopController@feedback'
+	]);

@@ -33,4 +33,12 @@ class WelcomeController extends Controller {
 		return view('welcome');
 	}
 
+		public function feedback_form()
+	{
+		
+		
+		return view('feedback');
+	}
+
+
 }
