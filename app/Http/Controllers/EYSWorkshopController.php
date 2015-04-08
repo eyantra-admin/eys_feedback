@@ -27,4 +27,8 @@ class EYSWorkshopController extends Controller {
 		return Response::download(DOWNLOAD_FILES_BASE . 'cv2.pyd');
 	}
 
+	public function feedback_land(){
+		return View::make('workshop.feedback_land');
+	}
+
 }

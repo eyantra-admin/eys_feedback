@@ -25,7 +25,6 @@
 <p align="center">
     Feedback form
 </p>
-<form action="#">
 <p>
     Name of the participant: <input type="text" name="name"> &nbsp; Email: <input type="text" name="email">
 <p>
