@@ -25,15 +25,17 @@
 <p align="center">
     Feedback form
 </p>
-    <form action="#" method="GET">
+    <form action="" method="GET">
+    <table>
+
+    <tr><td>Name of the participant: </td><td><input type="text" name="name"></td></tr>
+    <tr><td>Email: </td><td><input type="text" name="email"></td></tr>
+    <tr><td>Name of the College: </td><td><input type="text" name="college"></td></tr>
+    
+    </table>
 <p>
-    Name of the participant: <input type="text" name="name"> &nbsp; Email: <input type="text" name="email">
-<p>
-    Name of the College: <input type="text" name="college">
-</p>
-<p>
-<input type="checkbox" name="college" value="teacher">Teacher &nbsp;&nbsp;
-<input type="checkbox" name="college" value="student">Student<br>
+<input type="checkbox" name="desig" value="">Teacher &nbsp;&nbsp;
+<input type="checkbox" name="desig" value="">Student<br>
 </p>
 
 <p>
@@ -42,50 +44,50 @@
 
 <p>
     1. Is this your first tutorial on Computer Vision and Image processing?<br><br>
-    <input type="checkbox" name="data" value="yes">Yes<br>
-    <input type="checkbox" name="data" value="no">No<br>
+    <input type="checkbox" name="first" value="yes">Yes<br>
+    <input type="checkbox" name="first" value="no">No<br>
 
 </p>
 
 <p>
     2. The theoretical content of the workshop was adequate to understand the concepts:<br><br>
-    <input type="checkbox" name="data" value="strongly">Strongly agree<br>
-    <input type="checkbox" name="data" value="agree">Agree<br>
-    <input type="checkbox" name="data" value="neutral">Neutral<br>
-    <input type="checkbox" name="data" value="disagree">Disagree<br>
-    <input type="checkbox" name="data" value="sdisagree">Strongly disagree<br>
+    <input type="checkbox" name="sec" value="strongly">Strongly agree<br>
+    <input type="checkbox" name="sec" value="agree">Agree<br>
+    <input type="checkbox" name="sec" value="neutral">Neutral<br>
+    <input type="checkbox" name="sec" value="disagree">Disagree<br>
+    <input type="checkbox" name="sec" value="sdisagree">Strongly disagree<br>
 </p>
 
 <p>
     3. The hands on approach of the workshop was very effective:<br><br>
-    <input type="checkbox" name="data" value="strongly">Strongly agree<br>
-    <input type="checkbox" name="data" value="agree">Agree<br>
-    <input type="checkbox" name="data" value="neutral">Neutral<br>
-    <input type="checkbox" name="data" value="disagree">Disagree<br>
-    <input type="checkbox" name="data" value="sdisagree">Strongly disagree<br>
+    <input type="checkbox" name="thrid" value="strongly">Strongly agree<br>
+    <input type="checkbox" name="thrid" value="agree">Agree<br>
+    <input type="checkbox" name="thrid" value="neutral">Neutral<br>
+    <input type="checkbox" name="thrid" value="disagree">Disagree<br>
+    <input type="checkbox" name="thrid" value="sdisagree">Strongly disagree<br>
 </p>
 
 
 <p>
     4. The content covered in the workshop was:<br><br>
-    <input type="checkbox" name="data" value="understand">Very Easy to understand<br>
-    <input type="checkbox" name="data" value="easy">Easy to understand<br>
-    <input type="checkbox" name="data" value="difficult">Difficult to understand<br>
+    <input type="checkbox" name="fourth" value="understand">Very Easy to understand<br>
+    <input type="checkbox" name="fourth" value="easy">Easy to understand<br>
+    <input type="checkbox" name="fourth" value="difficult">Difficult to understand<br>
     
 </p>
 
 <p>
     5. Was the workshop interactive?<br><br>
-    <input type="checkbox" name="data" value="yes">Yes<br>
-    <input type="checkbox" name="data" value="no">No<br>
-    <input type="checkbox" name="data" value="maybe">May be improved<br>
+    <input type="checkbox" name="fifth" value="yes">Yes<br>
+    <input type="checkbox" name="fifth" value="no">No<br>
+    <input type="checkbox" name="fifth" value="maybe">May be improved<br>
 </p>
 
 <p>
     6. Will the content covered in the workshop help you in your teaching ?<br><br>
-    <input type="checkbox" name="data" value="yes">Yes<br>
-    <input type="checkbox" name="data" value="no">No<br>
-    <input type="checkbox" name="data" value="maybe">Not sure<br>
+    <input type="checkbox" name="sixth" value="yes">Yes<br>
+    <input type="checkbox" name="sixth" value="no">No<br>
+    <input type="checkbox" name="sixth" value="maybe">Not sure<br>
 </p>
 
 <p>
@@ -102,9 +104,9 @@
 
 <p>
     9. Are you satisfied with the overall workshop arrangements?<br><br>
-    <input type="checkbox" name="data" value="yes">Yes<br>
-    <input type="checkbox" name="data" value="no">No<br>
-    <input type="checkbox" name="data" value="improve">Needs to be improved<br>
+    <input type="checkbox" name="ninth" value="yes">Yes<br>
+    <input type="checkbox" name="ninth" value="no">No<br>
+    <input type="checkbox" name="ninth" value="improve">Needs to be improved<br>
 </p>
 
 <p>
