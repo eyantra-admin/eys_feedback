@@ -48,7 +48,7 @@
 				<!-- <div class="title">e-Yantra</div> -->
 				<div class="quote">Engineering a better tomorrow</div><br/>
 				<div class="quote">{{Inspiring::quote()}}</div><br/><br/>
-				<a href="{{URL::route('dwnResourcesLand')}}" class="btn">Download Workshop Resources</a><br/><br/>
+				<a href="{{URL::route('dwnResourcesLand')}}" class="btn">Software Installation Guide</a><br/><br/>
 				<a href="{{URL::route('feedback_form')}}" class="btn">Workshop Feedback</a>
 			</div>
 		</div>
