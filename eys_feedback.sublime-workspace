@@ -3,10 +3,49 @@
 	{
 		"selected_items":
 		[
+			[
+				"feedback",
+				"feedback_land"
+			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "app/Http/routes.php",
+			"settings":
+			{
+				"buffer_size": 1164,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/views/workshop/feedback_land.blade.php",
+			"settings":
+			{
+				"buffer_size": 3819,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<?php namespace App\\Http\\Controllers;\nuse View;\nuse Response;\nuse Input;\nuse Request;\n\nclass EYSWorkshopController extends Controller {\n\n	/**\n	 * Show the application welcome screen to the user.\n	 *\n	 * @return Response\n	 */\n	public function downloadResourcesLand()\n	{\n		return View::make('workshop.resources_land');\n		//return view('workshop.resources_land');\n	}\n\n	public function dwnldPython(){\n		return Response::download(DOWNLOAD_FILES_BASE . 'python-2.7.9.msi');\n	}\n\n	public function dwnldPythonNumpy(){\n		return Response::download(DOWNLOAD_FILES_BASE . 'numpy-1.7.1-win32-superpack-python2.7.exe');\n	}\n\n	public function dwnldOpenCV(){\n		return Response::download(DOWNLOAD_FILES_BASE . 'cv2.pyd');\n	}\n\n	public function feedback_land(){\n		return View::make('workshop.feedback_land');\n	}\n\n	public function feedback_data(){\n\n		$rules = array(\n			'name' => 'required',\n			'email' => 'required',\n\n			);\n		$validator = Validator::make(Input::all(), $rules);\n		if($validator -> fails())\n			return Redirect::to('workshop/feedback_land')\n			->withInput()\n			->withErrors($validator->messages());\n\n		$data = array(\n		$name=Input::get('name');\n		//if (DB::table('feedback')->whereName($name))\n		$email=Input::get('email');\n		$teacher=Input::get('teacher');\n		$student=Input::get('student');\n		\n		);\n\n		/*if (!Input::has('teacher')){\n    		//Redirect to the feedback page with error\n		}*/\n		\n		\n\n	}\n\n}\n",
+			"file": "app/Http/Controllers/EYSWorkshopController.php",
+			"file_size": 1334,
+			"file_write_time": 130729752946776204,
+			"settings":
+			{
+				"buffer_size": 1395,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Http/Controllers/WelcomeController.php",
+			"settings":
+			{
+				"buffer_size": 769,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -40,14 +79,38 @@
 	},
 	"expanded_folders":
 	[
-		"/var/www/eys_feedback"
+		"/var/www/eys_feedback",
+		"/var/www/eys_feedback/app",
+		"/var/www/eys_feedback/app/Http",
+		"/var/www/eys_feedback/app/Http/Controllers",
+		"/var/www/eys_feedback/config",
+		"/var/www/eys_feedback/resources",
+		"/var/www/eys_feedback/resources/views",
+		"/var/www/eys_feedback/resources/views/errors",
+		"/var/www/eys_feedback/resources/views/vendor",
+		"/var/www/eys_feedback/resources/views/workshop",
+		"/var/www/eys_feedback/tests"
 	],
 	"file_history":
 	[
+		"/var/www/eys_feedback/resources/views/workshop/resources_land.blade.php",
+		"/var/www/eys_feedback/app/Http/Controllers/WelcomeController.php",
+		"/var/www/eys_feedback/resources/views/welcome.blade.php",
+		"/var/www/eys_feedback/config/constants.php",
+		"/var/www/eys_feedback/vendor/laravel/framework/src/Illuminate/View/View.php",
+		"/var/www/eys_feedback/composer.json",
+		"/var/www/eys_feedback/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/Global_.php",
+		"/var/www/eys_feedback/vendor/laravel/framework/src/Illuminate/Http/Response.php",
+		"/var/www/eys_feedback/config/database.php",
+		"/var/www/eys_feedback/config/queue.php",
+		"/var/www/eys_feedback/config/cache.php",
+		"/var/www/eys_feedback/config/mail.php",
+		"/var/www/eys_feedback/config/app.php",
+		"/var/www/eys_feedback/bootstrap/app.php"
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -61,6 +124,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"feedback_land",
+			"make"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -78,18 +143,136 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "app/Http/routes.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1164,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								465,
+								465
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 16.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "resources/views/workshop/feedback_land.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3819,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								816,
+								816
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/Http/Controllers/EYSWorkshopController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1395,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1287,
+								1287
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 423.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/Http/Controllers/WelcomeController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 769,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								765,
+								765
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 101.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 25.0
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 33.0
 	},
 	"layout":
 	{
@@ -122,7 +305,7 @@
 	"project": "eys_feedback.sublime-project",
 	"replace":
 	{
-		"height": 0.0
+		"height": 46.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -131,6 +314,38 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"route",
+				"app/Http/routes.php"
+			],
+			[
+				"resou",
+				"resources/views/workshop/resources_land.blade.php"
+			],
+			[
+				"compo",
+				"composer.json"
+			],
+			[
+				"global.php",
+				"vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/Global_.php"
+			],
+			[
+				"response",
+				"vendor/laravel/framework/src/Illuminate/Http/Response.php"
+			],
+			[
+				"view",
+				"vendor/laravel/framework/src/Illuminate/View/View.php"
+			],
+			[
+				"app",
+				"bootstrap/app.php"
+			],
+			[
+				"data",
+				"config/database.php"
+			]
 		],
 		"width": 0.0
 	},
@@ -160,7 +375,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 329.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

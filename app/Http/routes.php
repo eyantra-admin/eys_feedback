@@ -11,7 +11,10 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index');
+Route::match(['GET','POST'], '/', [
+		'as'	=>	'home',
+		'uses'	=>	'WelcomeController@index'
+	]);
 
 Route::match(['GET', 'POST'], '/workshop/resources', [
 		'as'	=> 'dwnResourcesLand',
@@ -36,4 +39,9 @@ Route::match(['GET', 'POST'], '/workshop/resources/opencv', [
 Route::match(['GET', 'POST'], '/workshop/feedback', [
 		'as'	=> 'feedback_form',
 		'uses'	=> 'EYSWorkshopController@feedback_land'
+	]);
+
+Route::match(['GET', 'POST'], '/workshop/feedback_save', [
+		'as'	=> 'feedback_data',
+		'uses'	=> 'EYSWorkshopController@feedback_data'
 	]);

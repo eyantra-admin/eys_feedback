@@ -55,9 +55,12 @@ return [
 		'mysql' => [
 			'driver'    => 'mysql',
 			'host'      => env('DB_HOST', 'localhost'),
-			'database'  => env('DB_DATABASE', 'eys_event'),
+			/*'database'  => env('DB_DATABASE', 'eys_event'),
 			'username'  => env('DB_USERNAME', 'application'),
-			'password'  => env('DB_PASSWORD', 'pkm963lx'),
+			'password'  => env('DB_PASSWORD', 'pkm963lx'),*/
+			'database'  => 'eys_event',
+			'username'  => 'application',
+			'password'  => 'pkm963lx',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
