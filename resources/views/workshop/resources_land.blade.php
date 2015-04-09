@@ -32,9 +32,9 @@
 <hr>
 <p>This file contains instructions to install</p>
 <ul>
-	<li><b>Python : Programming Language</b></li>
-	<li><b>Numpy : Library for matrix computations</b></li>
-	<li><b>OpenCV : Library of computing functions for image processing</b></li>
+	<li><b>Python : Programming Language</b></li><br>
+	<li><b>Numpy : Library for matrix computations</b></li><br>
+	<li><b>OpenCV : Library of computing functions for image processing</b></li><br>
 
 </ul>
 
@@ -50,28 +50,30 @@
 					<li><b>Python</b></li>
 				
 				<ul>
-					<li>Download Python from the following link:<br><br>
+					<li>Download Python from the following button:<br><br>
 					<a href="{{URL::route('dwnPython2_7_9')}}" class="btn">Python 2.7.9</a><br/><br/>
 					</li>
 					<li>Double-click the downloaded file to commence installation</li>
 
 				</ul>
+				<br>
 					<li><b>Numpy</b></li>
 				<ul>
-					<li>Download Numpy from the following link: <br><br>
+					<li>Download Numpy from the following button: <br><br>
 					<a href="{{URL::route('dwnldPythonNumpy')}}" class="btn">Python Numpy</a><br/><br/>
 					</li>
 					<li>Double-click the downloaded file to commence installation</li>
 
 				</ul>
+				<br>
 					<li><b>OpenCV</b></li>
 					<ul>
-					<li>Download OpenCV from the following link:<br><br>
+					<li>Download OpenCV from the following button:<br><br>
 					<a href="{{URL::route('dwnldOpenCV')}}" class="btn">Open CV for Python</a><br/><br/>
 					</li>
-					<li>Double-click the downloaded file to commence installation</li>
-					<li>After installation of opencv navigate to the installation folder opencv/build/python/2.7</li>
-					<li>Copy the file cv2.pyd to python installation folder C:/Python27/lib/site-packages</li>
+					<li>Double-click the downloaded file to commence installation</li><br>
+					<li>After installation of opencv navigate to the installation folder opencv/build/python/2.7</li><br>
+					<li>Copy the file cv2.pyd to python installation folder C:/Python27/lib/site-packages</li><br>
 				</ul>
 				
 				
