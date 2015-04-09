@@ -75,7 +75,15 @@
 					<li>After installation of opencv navigate to the installation folder opencv/build/python/2.7</li><br>
 					<li>Copy the file cv2.pyd to python installation folder C:/Python27/lib/site-packages</li><br>
 				</ul>
-				
+				<br>
+					<li><b>Workshop Content</b></li>
+					<ul>
+					<li>Download workshop content from the following button:<br><br>
+					<a href="{{URL::route('dwnldContent')}}" class="btn">Workshop Content</a><br/><br/>
+					
+					</li>
+				</ul>
+
 				
 				</ol>
 	</body>

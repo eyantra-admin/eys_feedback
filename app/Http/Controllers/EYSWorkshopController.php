@@ -37,6 +37,10 @@ class EYSWorkshopController extends Controller {
 		return View::make('workshop.feedback_land');
 	}
 
+	public function dwnldContent(){
+			return Response::download(DOWNLOAD_FILES_BASE . 'eYS_Workshop.zip');
+	}
+
 	public function feedback_data(){
 
 		$name = Input::get('name');
